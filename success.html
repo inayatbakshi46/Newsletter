@@ -1,0 +1,35 @@
+<DOCTYPE HTML>
+<html class="h-full">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<meta http-equiv="refresh" content="5; URL=https://www.google.com" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-full">
+    <main class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="text-center">
+    <h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">You have been Signed in to our Newsletter</h1>
+    <p class="mt-6 text-base leading-7 text-gray-600"></p>
+    
+  </div>
+</main>
+    <script>
+      let txt = document.querySelector("p");
+let i = 5;
+
+function updateText() {
+  if (i >= 0) {
+    txt.textContent = "You will be redirected to your browser in " + i + " seconds";
+    i--;
+    setTimeout(updateText, 1000);
+  }
+}
+
+updateText();
+
+    </script>
+  </body>
+</html>
